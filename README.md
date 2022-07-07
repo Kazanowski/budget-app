@@ -5,13 +5,6 @@ For easy to use data are presentation on the charts.
 
 https://user-images.githubusercontent.com/43969393/148556844-66800656-ce40-47fd-b358-f714d43bbab3.mp4
 
-## Live
-
-[Budget App](https://kazanowski.github.io/budget-app-production/)
-
-- `login`: anna@kowalska.com
-- `password`: kowalskaanna
-
 ## Technologies
 
 #### Frontend
