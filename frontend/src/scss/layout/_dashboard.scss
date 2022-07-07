@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        align-self: flex-start;
+        margin-bottom: px2rem(24);
+    }
+    &__actions{
+        display: flex;
+        flex-direction: column;
+        gap: px2rem(8);
+        width: 100%;
+    }
+
+    @media (min-width: #{map-get($breakpoints, sm)}){
+        flex-direction: row;
+        height: px2rem(64);
+        &__logo{
+            align-self: auto;
+            margin: 0;
+        }
+        &__actions{
+            flex-direction: row;
+            gap: px2rem(16);
+            width: auto;
+        }
+    }
+    @media (min-width: #{map-get($breakpoints, lg)}){
+        height: px2rem(96);
+    }
+
+    & + main {
+        margin-top: px2rem(48);
+        margin-bottom: px2rem(48);
+    }
+}
+
+main{
+    h2{
+        margin-bottom: px2rem(24);
+    }
+    h3{
+        margin-bottom: px2rem(16);
+    }
+    h4{
+        margin-bottom: px2rem(12);
+    }
+    @media (max-width: #{map-get($breakpoints, xl)}){
+        h2{
+            font-size: px2rem(28);
+            font-weight: 600;
+        }
+    }
+}
+.dashboard {
+    @media (min-width: #{map-get($breakpoints, lg)}){
+        .summary{
+            flex-direction: row-reverse;
+            gap: px2rem(32);
+        }
+        &__date-range,
+        &__balance{
+            width: 50%;
+        }
+    }
+}
+.dashboard{
+    .date-filter{
+        .custom-select-field__dropdown{
+            top: 54px;
+        }
+    }
+    .charts,
+    .transactions{
+        margin-top: px2rem(32);
+    }
+
+    @media (max-width: #{map-get($breakpoints, xl)}){
+        .charts,
+        .transactions{
+            margin-top: px2rem(48);
+        }
+    }
+}

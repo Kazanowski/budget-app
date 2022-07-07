@@ -1,0 +1,4 @@
+@function px2rem($value-in-px){
+    $value-in-rem: ($value-in-px/$one-rem-in-px) + rem;
+    @return $value-in-rem;
+}

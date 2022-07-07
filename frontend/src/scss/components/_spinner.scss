@@ -1,0 +1,43 @@
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        width: 20vh;
+        height: 20vh;
+        min-width: px2rem(64);
+        min-height: px2rem(64);
+        max-width: px2rem(192);
+        max-height: px2rem(192);
+        animation: rotate 2s linear infinite;
+
+        circle{
+            fill: transparent;
+            stroke: white;
+            stroke-width: 4px;
+            stroke-linecap: round;
+            animation: dash 1.75s ease-in-out infinite;
+        }
+    }
+}
+
+@keyframes dash{
+    0%{
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50%{
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100%{
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}

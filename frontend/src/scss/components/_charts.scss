@@ -1,0 +1,81 @@
+.charts {
+  --bar-fill-color: var(--color-gray);
+  --bar-opacity: 1;
+
+  .chart {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+.bar {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 36px auto auto;
+  grid-template-rows: auto auto;
+  opacity: var(--bar-opacity);
+  transition: opacity 0.25s ease-in-out;
+  
+  &:not(:last-child){
+    margin-bottom: px2rem(8);
+  }
+
+  &.active{
+    opacity: 1;
+  }
+  &.active,
+  &:hover{
+    .bar__amount{
+      opacity: 1;
+    }
+  }
+}
+
+@each $key, $value in $color-for-category-transaction{
+  .bar[data-category$="#{$key}"] {
+    --bar-fill-color: #{$value};
+  }  
+}
+
+.bar__icon {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  padding-left: 0;
+  padding-right: px2rem(24);
+}
+.bar__label {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-transform: capitalize;
+}
+.bar__amount{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: end;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+.bar__label,
+.bar__amount{
+  align-self: end;
+  font-size: px2rem(14);
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: px2rem(2);
+}
+.bar__range {
+  position: relative;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  align-self: start;
+  background: var(--color-light);
+}
+.bar__range-fill {
+  position: absolute;
+  background: var(--bar-fill-color);
+}
+.bar__range,
+.bar__range-fill{
+  height: px2rem(8);
+  border-radius: 0 px2rem(8) px2rem(8) 0;
+}

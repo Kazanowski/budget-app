@@ -1,0 +1,41 @@
+$one-rem-in-px: 16;
+$headings-size-in-px: (48, 36, 24, 18);
+
+$breakpoints:( sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1440px);
+$colors: (
+  error: #E05457,
+  success: #7FB579
+);
+$color-for-type-transaction: (
+  income: #{map-get($colors, success)},
+  expense: #{map-get($colors, error)}
+);
+$color-for-category-transaction:(
+  bill: #4b53af,
+  clothes: #bc1d5e,
+  education: #cd66a4,
+  entertainment: #ff6200,
+  health-and-beauty: #008e91,
+  food: #c66152,
+  investments: #349651,
+  work:#b48f50,
+  other:#21c7ed
+);
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-dark: hsl(0, 0%, 23%);
+  --color-gray: hsl(120, 7%, 63%);
+  --color-gray-100: hsl(120, 6%, 93%);
+  --color-gray-200: hsl(120, 6%, 83%);
+  --color-light-gray: hsl(120, 7%, 73%);
+  --color-dark-gray: hsl(120, 7%, 53%);
+  --color-blue:  hsl(200, 100%, 40%);
+  --color-dark-blue: hsla(200, 100%, 35%);
+  --color-light: hsl(120, 6%, 93%);
+  --color-primary: hsl(200, 100%, 40%);
+  --color-error: #{map-get($colors, error)};
+  --color-success: #{map-get($colors, success)};
+  --font-poppins: "Poppins", sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,43 @@
+// ADD NEW TRANSACION
+POST http://localhost:3000/transactions/
+Content-Type: application/json
+
+{
+  "userID": "453d6072-0605-47da-87fa-1309eab74711",
+  "type": "expense",
+  "date": "2022-01-22",
+  "category": "entertainment",
+  "description": "Bar",
+  "amount": 50
+}
+
+###
+// GET USER TRANSACTIONS
+GET http://localhost:3000/transactions/453d6072-0605-47da-87fa-1309eab74711
+content-type: application/json
+
+
+
+###
+// REGISTER USER
+POST http://localhost:3000/users/register
+content-type: application/json
+
+{
+  "firstName": "john",
+  "lastName": "doe",
+  "email": "john@doe.com",
+  "password": "doejohn"
+}
+
+###
+// LOGIN USER
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "john@doe.com",
+    "password": "doejohn"
+}
+
+###

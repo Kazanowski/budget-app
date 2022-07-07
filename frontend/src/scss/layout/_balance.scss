@@ -1,0 +1,58 @@
+.balance{
+    &__wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+  .balance__chart{
+    position: relative;
+    width: 160px;
+    height: 160px;
+  }
+  .balance__chart-label{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: px2rem(16);
+    font-weight: 600;
+    transform: translate(-50%,-50%);
+  
+    &--positive{
+      color: var(--color-success);
+    }
+    &--negative{
+      color: var(--color-error);
+    }
+  }
+  .balance__summary{
+    display: inline-flex;
+    gap: px2rem(24);
+    
+    li{
+      font-size: px2rem(16);
+      font-weight: 600;
+      text-align: center;
+      span{
+        display: block;
+        font-size: px2rem(14);
+        font-weight: 400;
+      }
+    }
+  }
+
+  @media (min-width: #{map-get($breakpoints, sm)}){
+    .balance__wrapper{
+        flex-direction: row;
+        gap: 32px;
+    }
+    .balance__summary{
+      flex-direction: column;
+      gap: 16px;
+  
+      li{
+        text-align: left;
+      }
+    }
+  }

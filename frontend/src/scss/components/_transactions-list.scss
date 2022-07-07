@@ -1,0 +1,113 @@
+.list__item{
+  --icon-color: var(--color-dark);
+  @each $key, $value in $color-for-category-transaction{
+    &[data-category="#{$key}"] {
+      --icon-color: #{$value};
+    }  
+  }
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: px2rem(16) auto px2rem(32);
+  grid-template-areas: 
+    "date date"
+    "description amount"
+    "category actions";
+
+  border-top: 1px solid var(--color-light); 
+  padding: px2rem(8) px2rem(12);
+
+  & > * {
+    align-self: center;
+  }
+
+  &-date{
+    grid-area: date;
+    font-size: px2rem(12);
+    font-weight: 500;
+    line-height: 1;
+    padding-bottom: px2rem(4);
+  }
+  &-category{
+    display: flex;
+    align-items: center;
+    grid-area: category;
+    font-size: px2rem(14);
+    text-transform: capitalize;
+  }
+  &-description{
+    grid-area: description;
+    font-size: px2rem(14);
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  &-amount{
+    grid-area: amount;
+    justify-self: end;
+    font-size: px2rem(14);
+    font-weight: 600;
+  }
+  &-actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: px2rem(8);
+    grid-area: actions;
+    justify-self: end;
+  }
+  &[data-type="expense"] {
+    .list__item-amount {
+      color: var(--color-error);
+    }
+  }
+  &[data-type="income"]{
+    .list__item-amount {
+      color: var(--color-success);
+    }
+  }
+}
+.list__item--head{
+  display: none;
+  border: none;
+  border-radius: px2rem(4);
+  background-color: var(--color-light);
+  & > div{
+    font-size: px2rem(16);
+    font-weight: 600;
+  }
+}
+.list__item-category {
+  &-icon {
+    padding-left: 0;
+    svg {
+      color: var(--icon-color);
+    }
+  }
+}
+.list__item-actions{
+  .btn-icon{
+    padding: px2rem(2);
+    &:last-child{
+      padding: px2rem(2) 0 px2rem(2) px2rem(4);
+    }
+  }
+}
+@media (min-width: #{map-get($breakpoints, lg)}){
+  .list__item{
+    grid-template-columns: 1fr 2fr 3fr 1fr 1fr;
+    grid-template-rows: px2rem(48);
+    grid-template-areas: 
+      "date category description amount actions";
+
+    padding: px2rem(4) px2rem(12);
+    border-top: none;
+    &:not(:last-child){
+      border-bottom: 1px solid var(--color-light);
+    } 
+    &--head{
+      display: grid;
+    }
+    &-date{
+      padding: 0;
+    }
+  }
+}

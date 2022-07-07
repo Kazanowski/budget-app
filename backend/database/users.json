@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": "453d6072-0605-47da-87fa-1309eab74711",
+      "firstName": "Anna",
+      "lastName": "Kowalska",
+      "email": "anna@kowalska.com",
+      "password": "$2b$10$lmPbGNLhePXS.9qdSQoLKesfYYKozgs1.11GH4Toq8R2JCoW3PLy2"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+.pie-chart{
+    position: relative;
+    transform: rotate(-90deg);
+    width: 160px;
+    height: 160px;
+
+    circle{
+        fill: transparent;
+        stroke-width: 16px;
+        stroke-linecap: round;
+    }
+    .pie-chart__rail{
+        stroke: var(--color-success);
+    }
+    .pie-chart__fill{
+        stroke: var(--color-error);
+    }
+}

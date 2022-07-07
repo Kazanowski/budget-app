@@ -1,0 +1,45 @@
+.type-list .custom-radio label{
+    @each $key, $value in $color-for-type-transaction{
+        &[data-value="#{$key}"] {
+            --bg-color: #{$value};
+        };
+    }    
+}
+.category-list .custom-radio label{
+    @each $key, $value in $color-for-category-transaction{
+        &[data-value="#{$key}"] {
+            --bg-color: #{$value};
+        };
+    }    
+}
+
+fieldset{
+    border: none;
+    margin-bottom: px2rem(24);
+
+    legend{
+        font-size: px2rem(18);
+        font-weight: 600;
+        padding-bottom: px2rem(12);
+    }
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: px2rem(16);
+    }
+}
+.detail-list .wrapper{
+    flex-direction: column;
+    gap: 0;
+}
+
+#add-transaction-form,
+#edit-transaction-form{
+    .detail-list{
+        margin-bottom: 0;
+    }
+    button[type="submit"]{
+        float: right;
+        display: none;
+    }
+}

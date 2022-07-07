@@ -1,0 +1,229 @@
+{
+  "transactions": [
+    {
+      "id": "2319bf58-849f-40af-a0ae-e46ea862f348",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "income",
+      "category": "work",
+      "description": "Payment",
+      "date": "2022-04-10",
+      "amount": 5000
+    },
+    {
+      "id": "e0fe5812-7be0-44ce-9467-8adc78e6a0d7",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "income",
+      "category": "work",
+      "description": "Payment",
+      "date": "2022-03-10",
+      "amount": 5000
+    },
+    {
+      "id": "3c29b3d3-c140-45cc-b6f3-2ea1a635f71a",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "income",
+      "category": "work",
+      "description": "Payment",
+      "date": "2022-02-10",
+      "amount": 5000
+    },
+    {
+      "id": "a47fe358-11e2-4442-9af9-8ff8cff0c0b2",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "income",
+      "category": "work",
+      "description": "Payment",
+      "date": "2022-01-10",
+      "amount": 5000
+    },
+    {
+      "id": "1b07cfeb-24a6-4f4b-92ab-4cd75962aa69",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "income",
+      "category": "work",
+      "description": "Payment",
+      "date": "2021-12-10",
+      "amount": 5000
+    },
+    {
+      "id": "b1d5ce39-d2d8-4e37-bf05-f7119db3f58c",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "bill",
+      "description": "Phone bill",
+      "date": "2021-12-11",
+      "amount": 100
+    },
+    {
+      "id": "981bd628-8f04-47d7-8a14-40229f45135a",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "bill",
+      "description": "Phone bill",
+      "date": "2022-01-11",
+      "amount": 100
+    },
+    {
+      "id": "1b6911c4-023b-4e57-8a0b-6470a6943565",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "bill",
+      "description": "Phone bill",
+      "date": "2022-02-10",
+      "amount": 100
+    },
+    {
+      "id": "8b6d3319-3e64-4701-91bd-237d6a03e9af",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "bill",
+      "description": "Phone bill",
+      "date": "2022-03-10",
+      "amount": 100
+    },
+    {
+      "id": "b6db65f6-ef92-4418-9ff5-44ec169e7b89",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "bill",
+      "description": "Phone bill",
+      "date": "2022-04-10",
+      "amount": 100
+    },
+    {
+      "id": "2d21259a-df72-4c15-82c8-377a2dd36c68",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "clothes",
+      "description": "T-shirt",
+      "date": "2022-02-02",
+      "amount": 150
+    },
+    {
+      "id": "160e1bdc-5937-4900-a734-96517290f2ba",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "clothes",
+      "description": "Pants",
+      "date": "2022-03-14",
+      "amount": 200
+    },
+    {
+      "id": "24e14555-5a36-4cde-876f-dff56a2a0971",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "bill",
+      "description": "Rent a flat",
+      "date": "2022-01-12",
+      "amount": 1500
+    },
+    {
+      "id": "bb891580-f21b-4e5e-96c8-259db87b5c01",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "bill",
+      "description": "Rent a flat",
+      "date": "2021-12-01",
+      "amount": 1500
+    },
+    {
+      "id": "e37b8ae2-dda0-4fe0-9128-2058323d4796",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "bill",
+      "description": "Rent a flat",
+      "date": "2022-02-01",
+      "amount": 1500
+    },
+    {
+      "id": "686a3f71-2a81-4c3b-b889-54bddadbc004",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "bill",
+      "description": "Rent a flat",
+      "date": "2022-03-01",
+      "amount": 1500
+    },
+    {
+      "id": "2e29a200-aa41-4b94-8467-dc951b615d42",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "bill",
+      "description": "Rent a flat",
+      "date": "2022-04-10",
+      "amount": 1500
+    },
+    {
+      "id": "6d778501-b59c-4404-ae67-fdfbff6085e0",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "education",
+      "description": "Book",
+      "date": "2022-01-06",
+      "amount": 25
+    },
+    {
+      "id": "915cec48-ef01-4829-a237-7e51964c2922",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "education",
+      "description": "Book",
+      "date": "2022-03-06",
+      "amount": 25.5
+    },
+    {
+      "id": "58a4496b-1f24-48b0-b777-1c274d233a3c",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "education",
+      "description": "Book",
+      "date": "2022-03-06",
+      "amount": 25
+    },
+    {
+      "id": "ab061d6d-7809-4be1-aa34-296dbc8ab94c",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "education",
+      "description": "Book",
+      "date": "2022-04-06",
+      "amount": 25
+    },
+    {
+      "id": "e644c9ec-034f-45fd-b820-0f9d1c90b684",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "food",
+      "description": "Pizza",
+      "date": "2022-04-05",
+      "amount": 50
+    },
+    {
+      "id": "bd7e4212-7681-4f6c-8ba8-8a6223a24d84",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "food",
+      "description": "Kebab",
+      "date": "2022-04-12",
+      "amount": 30
+    },
+    {
+      "id": "b170221e-0c53-463c-930f-0ff6a1d0eaaa",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "health-and-beauty",
+      "description": "Ticket to the gym",
+      "date": "2022-04-04",
+      "amount": 150
+    },
+    {
+      "id": "2cba6733-85e6-4567-9298-160563e2322b",
+      "userID": "453d6072-0605-47da-87fa-1309eab74711",
+      "type": "expense",
+      "category": "entertainment",
+      "description": "Beers",
+      "date": "2022-04-15",
+      "amount": 20
+    }
+  ]
+}

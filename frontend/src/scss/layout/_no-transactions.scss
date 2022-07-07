@@ -1,0 +1,16 @@
+.no-transactions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 240px;
+    background-image: url(./../img/no-transactions.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 240px 240px;
+
+    h3{
+        font-size: px2rem(24);
+        text-align: center;
+    }
+}

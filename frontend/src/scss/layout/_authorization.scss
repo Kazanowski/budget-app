@@ -1,0 +1,35 @@
+.authorization {
+  display: flex;
+  justify-content: center;
+
+  .login,
+  .register {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+    margin-top: 48px;
+  }
+}
+
+.login,
+.register {
+  h2 + p {
+    font-weight: 500;
+    color: var(--color-gray);
+  }
+
+  form {
+    margin-top: 24px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  p:last-child {
+    text-align: center;
+    margin-top: 16px;
+  }
+}

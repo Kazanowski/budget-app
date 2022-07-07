@@ -1,0 +1,81 @@
+%btn{
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.btn{
+    @extend %btn;
+    font-size: px2rem(16);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    color: var(--color-white);
+    border-radius: px2rem(4);
+    padding: px2rem(12) px2rem(24);
+    background-color: var(--color-blue);
+    transition: background-color 0.25s ease-in-out;
+
+    &:hover{
+        background-color: var(--color-dark-blue);
+    }
+
+    &--secondary{
+        color: var(--color-dark);
+        background-color: var(--color-gray-100);
+        &:hover{
+            background-color: var(--color-gray-200);
+        }
+    }
+}
+.btn-icon{
+    @extend %btn;
+    svg{
+        transition: color 0.25s ease-in-out;
+    }
+    &:hover{
+        svg{
+            color: var(--color-dark-gray);
+        }
+    }
+}
+.icon{
+    display: inline-block;
+}
+.btn-icon,
+.icon{
+    width: px2rem(48);
+    height: px2rem(48);
+    padding: px2rem(12);
+
+    svg{
+        width: 100%;
+        height: 100%;
+        color: var(--color-gray);
+    }
+
+
+    &--large {
+        padding: px2rem(6);
+    }
+    &--small {
+        width: px2rem(24);
+        height: px2rem(24);
+        padding: px2rem(4);
+    }
+}
+
+.link{
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-blue);
+    transition: color 0.25s ease-in-out, text-decoration 0.25s ease-in-out;
+
+    &:hover{
+        color: var(--color-dark-blue);
+        text-decoration: underline;
+    }
+}
+

@@ -1,0 +1,29 @@
+.modal__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: px2rem(696);
+  margin: px2rem(16);
+  border-radius: px2rem(8);
+  background-color: var(--color-white);
+
+  @media (min-width: #{map-get($breakpoints, md)}) {
+    width: 100%;
+    margin: px2rem(32) auto;
+  }
+}
+.modal__header,
+.modal__body,
+.modal__footer {
+  padding: px2rem(16);
+}
+.modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: px2rem(16);
+}
+.modal__header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-gray-100);
+}
